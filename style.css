@@ -1,0 +1,59 @@
+body {
+    background-color:#2E5159;
+    
+    
+}
+
+.picbio {
+    height: 25vh;
+    display: flex;
+    margin: 16vh 5vw 10vh 5vw ;
+    
+}
+
+.picture {
+    border: 1px solid black;
+    flex-basis: 33%;
+    margin: 2vh
+
+}
+
+.bio {
+    
+    border: 1px solid black;
+    flex-basis: 60%;
+    background-color:#56735A ;
+    margin: 5vh;
+
+}
+
+.projects {
+    display: flex;
+    height: 30vh;
+    border: 1px solid black;
+    margin: 5vh 5vw 10vh 5vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    height: 10vh;
+    border: 1px solid black;
+    margin: 1vh 3vw 3vh 3vw;
+    align-items: center;
+    justify-content: center;
+}
+#pro{
+    
+}
+#resume {
+    height: 3vh;
+}
+
+/* Color Theme Swatches in Hex */
+/* .Afternoon-by-the-river-1-hex { color: #2E5159; }
+.Afternoon-by-the-river-2-hex { color: #142426; }
+.Afternoon-by-the-river-3-hex { color: #8C8577; }
+.Afternoon-by-the-river-4-hex { color: #D9BEA7; }
+.Afternoon-by-the-river-5-hex { color: #F2D6BD; } */
