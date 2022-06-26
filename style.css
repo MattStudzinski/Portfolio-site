@@ -1,5 +1,7 @@
 body {
     background-color:#2E5159;
+    margin: 0;
+    padding:0;
     
     
 }
@@ -7,20 +9,24 @@ body {
 .picbio {
     height: 25vh;
     display: flex;
-    margin: 16vh 5vw 10vh 5vw ;
+    margin: 16vh 0vw 10vh 0vw ;
+    border-bottom: 1px solid black;
     
 }
 
 .picture {
-    border: 1px solid black;
-    flex-basis: 33%;
-    margin: 2vh
+    border: 1px solid white;
+    flex-basis:32%;
+    
 
+}
+#me {
+    height: 13.8vh
 }
 
 .bio {
     
-    border: 1px solid black;
+    /* border: 1px solid; */
     flex-basis: 60%;
     background-color:#56735A ;
     margin: 5vh;
@@ -30,25 +36,53 @@ body {
 .projects {
     display: flex;
     height: 30vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 5vh 5vw 10vh 5vw;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-bottom: 1px solid;
+    
+    
 }
 
 .links {
     display: flex;
     height: 10vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 1vh 3vw 3vh 3vw;
     align-items: center;
     justify-content: center;
 }
-#pro{
+.projectPicture{
+    height:10vh;
     
+    
+}
+.item {
+    position: relative;
+    
+}
+.text {
+    position: absolute;
 }
 #resume {
     height: 3vh;
+}
+
+@media screen and (max-width: 420px ) {
+    .picbio{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10vh;
+        
+    }
+    .picture{
+    height: 55%;
+    margin-bottom: auto; 
+    }
+    .bio{
+        height: 45%
+    }
 }
 
 /* Color Theme Swatches in Hex */
