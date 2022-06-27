@@ -37,9 +37,9 @@ body {
     display: flex;
     height: 30vh;
     /* border: 1px solid black; */
-    margin: 5vh 5vw 10vh 5vw;
+    margin: 5vh 0vw 10vh 0vw;
     justify-content: center;
-    flex-flow: row wrap;
+    align-content: center;
     border-bottom: 1px solid;
     
     
@@ -54,7 +54,7 @@ body {
     justify-content: center;
 }
 .projectPicture{
-    height:10vh;
+    height:20vh;
     
     
 }
@@ -68,6 +68,10 @@ body {
 #resume {
     height: 3vh;
 }
+.list {
+    background-color: blue;
+}
+
 
 @media screen and (max-width: 420px ) {
     .picbio{
