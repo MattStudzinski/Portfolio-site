@@ -62,17 +62,32 @@ body {
 .item {
 width: 100%;
 position: relative;
-background-color: red;
+transition: 0.5s;
 border: 3px solid blue;
 display: flex;
 justify-content: center;
 align-items: center;
+background-image: url(coming-soon-sign.webp);
+background-position: center;
+background-size: cover;
 }
-.text {
-    position: absolute;
-    color: orange;
-    
+.item p{
+opacity :0;
+transform: scale(0);
+transition: 0.8s;
+font-size: 2rem;
 }
+.item:hover{
+    box-shadow: 0 0 0 100px rgba(178, 168, 168, 0.879) inset;
+
+
+}
+.item:hover p{
+    opacity: 1;
+    transform: scale(1) ;
+}
+
+
 #resume {
     height: 3vh;
 }
