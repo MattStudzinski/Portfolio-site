@@ -54,16 +54,23 @@ body {
     justify-content: center;
 }
 .projectPicture{
-    height:20vh;
+    height:200px;
+    
     
     
 }
 .item {
-    position: relative;
-    
+width: 100%;
+position: relative;
+background-color: red;
+border: 3px solid blue;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .text {
     position: absolute;
+    color: orange
 }
 #resume {
     height: 3vh;
