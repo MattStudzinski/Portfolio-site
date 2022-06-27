@@ -40,16 +40,15 @@
 // }
 
 
-const el = document.querySelectorAll(".text")
+// const el = document.querySelectorAll(".text")
 
-el. forEach(p =>
-    p.addEventListener('mouseover', handleIt))
+// el. forEach(p =>
+//     p.addEventListener('mouseover', handleIt))
 
 
-function handleIt(e) {
-    e.target.style.display = "none"
-
-}
+// function handleIt(e) {
+// e.target.style.display = "block"
+// }
 
 // function changeColor (e) {
 //     e.navbar.style.color = "blue";
