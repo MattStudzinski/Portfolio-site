@@ -70,7 +70,8 @@ align-items: center;
 }
 .text {
     position: absolute;
-    color: orange
+    color: orange;
+    
 }
 #resume {
     height: 3vh;
