@@ -5,49 +5,54 @@
 //     console.log('how')
 // }
 
-const el = document.querySelectorAll(".text")
+// const el = document.querySelector(".text")
 // const el2 = document.querySelector("#text2")
 // const el3 = document.querySelector("#text3")
 // const el4 = document.querySelector("#text4")
 // const el5 = document.querySelector("#text5")
 // const el6 = document.querySelector("#text6")
 
-function hide (e) {
-    e.el.style.color = 'green';
-}
-el.forEach(p =>
-    p.addEventListener('mouseover', hide))
 
 // el.addEventListener("mouseover", handleIt)
 // function handleIt() {
-//     Style.
+
 // }
 // el2.addEventListener("click", handleIt)
 // function handleIt() {
-//     console.log('hi')
+    
 // }
 // el3.addEventListener("click", handleIt)
 // function handleIt() {
-//     console.log('hi')
+   
 // }
 // el4.addEventListener("click", handleIt)
 // function handleIt() {
-//     console.log('hi')
+    
 // }
 // el5.addEventListener("click", handleIt)
 // function handleIt() {
-//     console.log('hi')
+    
 // }
-// el6.addEventListener("click", handleIt)
+// el6.addEventListener("mouseover", handleIt)
 // function handleIt() {
 //     console.log('hi')
+//     el.style.display = "block"
 // }
 
 
-// const navbar = document.querySelectorAll(".nav-link")
+const el = document.querySelectorAll(".text")
+
+el. forEach(p =>
+    p.addEventListener('mouseover', handleIt))
+
+
+function handleIt(e) {
+    e.target.style.display = "none"
+
+}
 
 // function changeColor (e) {
-//     e.target.style.color = "blue";
+//     e.navbar.style.color = "blue";
 // }
 
 // navbar.forEach(p => p.addEventListener("mouseover", changeColor))
