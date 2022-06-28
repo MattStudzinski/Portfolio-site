@@ -309,7 +309,7 @@ a:hover{
 }
 
 .bio{
-    font-size: 26px;
+    font-size: 24px;
     padding: 20px;
 }
 .heading {
@@ -350,7 +350,7 @@ p{
 
 @media screen and (min-width: 896px){
 .bio{
-    font-size: 32px;
+    font-size: 30px;
 }
 .modal{
     width: 60%;
@@ -364,8 +364,8 @@ p{
 }
 @media screen and (min-width: 1200px){
     .bio{
-        font-size: 36px;
-        padding: 20px;
+        font-size: 33px;
+        padding: 21px
     }
     .modal-btn{
         padding: 10px;
@@ -382,7 +382,7 @@ p{
 }
 @media screen and (min-width: 1800px){
     .bio{
-        font-size: 46px;
+        font-size: 44px;
     }
     .close{
         top: 4%;
