@@ -45,19 +45,16 @@ p {
 
 }
 
-
-
-
-#resume {
-    font-size: 22px;
-    background-color: black;
-    color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
-    margin-bottom: 20px;
-} 
 img{
     height:20vh
 } 
+.heading{
+    color: rgb(189, 189, 189);
+    background-color: rgb(67, 66, 66);
+    margin: 30px 30px 30px 30px;
+    
+    
+}
 
 
 
@@ -111,8 +108,8 @@ a:hover{
 
 }
 .button{
-    width:10px;
-    height:10px;
+    width:15px;
+    height:15px;
     display: inline-block;
     background: rgb(210, 190, 240, 0.2);
     border-radius: 50%;
@@ -142,9 +139,16 @@ a:hover{
     visibility: visible;
     opacity:1;
 }
+.modal-btn{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 .modal{
     position: relative;
-    width: 80%;
+    width: 90%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -165,18 +169,12 @@ a:hover{
     
     
 }
-.resume{
-    display: flex;
-    flex-grow: 4;
-    
-}
-
 @media screen and (max-width: 420px ) {
     .picbio{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 55vh;
+        padding-bottom: 65vh;
         
     }
     .picture{
@@ -218,6 +216,17 @@ a:hover{
         
         
     }
+    .close{
+        position: fixed;
+        top: 4.5%;
+        right:6%;
+        
+        font-size: 40px;
+        color: rgb(163, 0, 163);
+        cursor: pointer;
+        
+        
+    }
     
 
 } 
@@ -239,6 +248,7 @@ a:hover{
     .bio{
         padding: 20px;
         height: 50vh;
+        font-size: 18.5px;
 
     }
     .heading {
@@ -253,8 +263,129 @@ a:hover{
         margin: 20px;
         
     }
-    
+    p{
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 10%;
+        box-shadow: 2px 2px;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        border-top: 3px solid black;
+    }
+    .modal-btn{
+        border: 3px solid purple;
+        
+    }
+    .close{
+        position: fixed;
+        top: 5%;
+        right: 6%;
+        font-size: 40px;
+        color: rgb(163, 0, 163);
+        cursor: pointer;
+        
+        
+    }
     
     
 
+}
+@media screen and (min-width: 620px){
+
+.picbio{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40vh;
+}
+.picture{
+    height: 50vh;
+    flex-basis: 45%;
+    margin-bottom: auto; 
+    padding-top: 20px;
+}
+
+.bio{
+    font-size: 26px;
+    padding: 20px;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10vh;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+p{
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: 2px 2px;
+}
+.close{
+    position: fixed;
+    top: 5%;
+    right:16%;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(163, 0, 163);
+    cursor: pointer;
+    
+    
+}
+.modal{
+    width: 70%;
+}
+}
+
+@media screen and (min-width: 896px){
+.bio{
+    font-size: 32px;
+}
+.modal{
+    width: 60%;
+}
+.close{
+    width: 7%;
+    top: 4%;
+    font-size: 40px;
+}
+
+}
+@media screen and (min-width: 1200px){
+    .bio{
+        font-size: 36px;
+        padding: 20px;
+    }
+    .modal-btn{
+        padding: 10px;
+    }
+    .modal{
+        width: 60%;
+    }
+    .close{
+        right: 15.5%;
+        top: 4%;
+        font-size: 40px;
+        
+    }
+}
+@media screen and (min-width: 1800px){
+    .bio{
+        font-size: 46px;
+    }
+    .close{
+        top: 4%;
+        font-size: 45px;
+    }
 }
