@@ -2,6 +2,7 @@ body {
     background-color:#60576E;
     margin: 0;
     padding:0;
+    font-family: 'Raleway', sans-serif;
     
     
 }
@@ -15,8 +16,9 @@ body {
 }
 
 .picture {
-    border: 1px solid white;
+    
     flex-basis:32%;
+    
     
     
 
@@ -25,6 +27,8 @@ body {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
     
 
 }
@@ -57,56 +61,6 @@ img{
 
 
 
- @media screen and (max-width: 420px ) {
-    .picbio{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 40vh;
-        
-    }
-    .picture{
-    height: 30vh;
-    flex-basis: 45%;
-    margin-bottom: auto; 
-    }
-    .bio{
-        height: 65%
-    }
-    .heading {
-        display: flex;
-        justify-content: center;
-    }
-    .carousel{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 10vh;
-        margin: 25px 20px 25px 20px
-        
-    }
-    p{
-        border: 3px solid black;
-        padding: 10px;
-        border-radius: 10%;
-        box-shadow: 2px 2px;
-    }
-    .links{
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        padding: 20px;
-        border-top: 3px solid black;
-    }
-    #resume{
-        border: 3px solid purple;
-        
-    }
-    
-
-} 
-
-
 .carousel .carousel2 {
 position: relative ;
 }
@@ -122,6 +76,8 @@ position: relative ;
     background-size: cover;
     transition: 0.5s;
     display:none;
+    border: 2px solid white;
+    border-radius: 5%;
 }
 .item--selected{
 display:flex
@@ -166,4 +122,91 @@ a:hover{
 
 .button--selected {
     background:rgb(210, 190, 240, 0.9);
+}
+
+@media screen and (max-width: 420px ) {
+    .picbio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 55vh;
+        
+    }
+    .picture{
+    height: 30vh;
+    flex-basis: 45%;
+    margin-bottom: auto; 
+    }
+    .bio{
+        font-size: 15;
+        padding: 20px;
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10vh;
+        margin: 20px;
+        
+    }
+    p{
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 10%;
+        box-shadow: 2px 2px;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        border-top: 3px solid black;
+    }
+    #resume{
+        border: 3px solid purple;
+        
+    }
+    
+
+} 
+
+ @media screen and (min-width: 421px){
+    .picbio{
+        display: flex;
+        flex-wrap: flex;
+        justify-content: center;
+        padding-bottom: 50vh;
+        margin: 10px;
+    }
+
+    .picture{
+    height: 60vh;
+    flex-basis: 45%;
+    margin-bottom: auto; 
+    }
+    .bio{
+        padding: 20px;
+        height: 50vh;
+
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10vh;
+        margin: 20px;
+        
+    }
+    
+    
+    
+
 }
