@@ -18,10 +18,13 @@ body {
     border: 1px solid white;
     flex-basis:32%;
     
+    
 
 }
 #me {
-    height: 13.8vh
+    height: 13.8vh;
+    
+
 }
 
 .bio {
@@ -33,18 +36,77 @@ body {
 
 }
 
-.projects {
-    display: flex;
-    height: 30vh;
+.carousel {
+    /* display: flex; */
+    height: 600px;
+    width: 80%;
     /* border: 1px solid black; */
-    margin: 5vh 0vw 10vh 0vw;
-    justify-content: center;
-    align-content: center;
-    border-bottom: 1px solid;
+    position: relative;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-content: center; */
+    /* border-bottom: 1px solid; */
+    
     
     
 }
+.carImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.item{
+    background-color: magenta;
+    height: 100%;
+    position:relative;
 
+}
+.carousel_track{
+padding:0;
+margin:0;
+list-style:none;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel_button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+}
+.carousel_button i{
+    cursor: pointer;
+    color: firebrick;
+}
+.carousel_button--left{
+    left: -40px;
+}
+.carousel_button--right{
+    right: -40px;
+}
+.carousel_nav {
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.indicator {
+    border:0;
+    border-radius:50%;
+    width:15px;
+    height: 15px;
+    background: rgb(0, 0, 0, rgb(0, 0, 0, .75));
+    margin:0 7px
+    
+}
+.indicator.current-slide {
+    background: rgb(0, 0, 0, .75);
+}
 .links {
     display: flex;
     height: 10vh;
@@ -53,13 +115,13 @@ body {
     align-items: center;
     justify-content: center;
 }
-.projectPicture{
+/* .projectPicture{
     height:200px;
     
     
     
-}
-.item {
+} */
+/* .item {
 width: 100%;
 position: relative;
 transition: 0.5s;
@@ -67,7 +129,6 @@ border: 3px solid blue;
 display: flex;
 justify-content: center;
 align-items: center;
-background-image: url(coming-soon-sign.webp);
 background-position: center;
 background-size: cover;
 }
@@ -75,7 +136,7 @@ background-size: cover;
 opacity :0;
 transform: scale(0);
 transition: 0.8s;
-font-size: 2rem;
+font-size: 1.5rem;
 }
 .item:hover{
     box-shadow: 0 0 0 100px rgba(178, 168, 168, 0.879) inset;
@@ -86,14 +147,18 @@ font-size: 2rem;
     opacity: 1;
     transform: scale(1) ;
 }
+a:hover {
+    color: orange;
+}
 
 
 #resume {
     height: 3vh;
-}
-.list {
-    background-color: blue;
-}
+} */
+/* img{
+    height:20vh
+} */
+
 
 
 @media screen and (max-width: 420px ) {
