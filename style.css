@@ -1,7 +1,8 @@
 body {
-    background-color:#2E5159;
+    background-color:#60576E;
     margin: 0;
     padding:0;
+    font-family: 'Raleway', sans-serif;
     
     
 }
@@ -15,152 +16,49 @@ body {
 }
 
 .picture {
-    border: 1px solid white;
+    
     flex-basis:32%;
+    
     
     
 
 }
 #me {
-    height: 13.8vh;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
     
 
+}
+p {
+    font-size: 25px;
 }
 
 .bio {
     
-     border: 1px solid; */
+    border: 1px solid;
     flex-basis: 60%;
-    background-color:#56735A ;
+    background-color:#D2BEF0 ;
     margin: 5vh;
 
 }
 
-/* .carousel {
-    /* display: flex; */
-    /* height: 600px;
-    width: 80%;
-    /* border: 1px solid black; */
-    /* position: relative;
-    margin: 0 auto; */
-    /* justify-content: center; */
-    /* align-content: center; 
-    /* border-bottom: 1px solid; */
-    
-    
-    
-/* } */
-/* .carImage{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-/* } */
-
-/* }
-.carousel_track{
-padding:0;
-margin:0;
-list-style:none;
-}
-.slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-.carousel_button{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-}
-.carousel_button i{
-    cursor: pointer;
-    color: firebrick;
-}
-.carousel_button--left{
-    left: -40px;
-}
-.carousel_button--right{
-    right: -40px;
-}
-.carousel_nav {
-    display:flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-.indicator {
-    border:0;
-    border-radius:50%;
-    width:15px;
-    height: 15px;
-    background: rgb(0, 0, 0, rgb(0, 0, 0, .75));
-    margin:0 7px
-    
-}
-.indicator.current-slide {
-    background: rgb(0, 0, 0, .75);
-}
-.links {
-    display: flex;
-    height: 10vh; */
-    /* border: 1px solid black; */
-    /* margin: 1vh 3vw 3vh 3vw;
-    align-items: center;
-    justify-content: center;
-} */ 
-/* .projectPicture{
-    height:200px;
-    
-    
-    
-} */
-/* .item {
-width: 100%;
-position: relative;
-transition: 0.5s;
-border: 3px solid blue;
-display: flex;
-justify-content: center;
-align-items: center;
-background-position: center;
-background-size: cover;
-}
-.item p{
-opacity :0;
-transform: scale(0);
-transition: 0.8s;
-font-size: 1.5rem;
-/* } */
 
 
 
 #resume {
-    height: 3vh;
-} */ 
-/* img{
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 20px;
+} 
+img{
     height:20vh
-} */
+} 
 
-
-
-/* @media screen and (max-width: 420px ) {
-    .picbio{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 10vh;
-        
-    }
-    .picture{
-    height: 55%;
-    margin-bottom: auto; 
-    }
-    .bio{
-        height: 45%
-    }
-} */
 
 
 .carousel .carousel2 {
@@ -178,6 +76,8 @@ position: relative ;
     background-size: cover;
     transition: 0.5s;
     display:none;
+    border: 2px solid white;
+    border-radius: 5%;
 }
 .item--selected{
 display:flex
@@ -188,6 +88,7 @@ opacity: 0;
 transform: scale(0);
 transition: 0.8s;
 font-size: 1.3rem;
+color: white;
 
 }
 .item:hover{
@@ -213,12 +114,147 @@ a:hover{
     width:10px;
     height:10px;
     display: inline-block;
-    background: rgb(128, 128, 128, 0.2);
+    background: rgb(210, 190, 240, 0.2);
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .button--selected {
-    background:rgb(128, 128, 128, 0.5);
+    background:rgb(210, 190, 240, 0.9);
+}
+
+.modal_bg {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(47, 47, 47, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.bg-active{
+    visibility: visible;
+    opacity:1;
+}
+.modal{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    
+    
+    
+}
+.close{
+    position: absolute;
+    top: 30px;
+    right:40px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(163, 0, 163);
+    cursor: pointer;
+    
+    
+}
+.resume{
+    display: flex;
+    flex-grow: 4;
+    
+}
+
+@media screen and (max-width: 420px ) {
+    .picbio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 55vh;
+        
+    }
+    .picture{
+    height: 30vh;
+    flex-basis: 45%;
+    margin-bottom: auto; 
+    }
+    .bio{
+        font-size: 15;
+        padding: 20px;
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10vh;
+        margin: 20px;
+        
+    }
+    p{
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 10%;
+        box-shadow: 2px 2px;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        border-top: 3px solid black;
+    }
+    .modal-btn{
+        border: 3px solid purple;
+        
+        
+    }
+    
+
+} 
+
+ @media screen and (min-width: 421px){
+    .picbio{
+        display: flex;
+        flex-wrap: flex;
+        justify-content: center;
+        padding-bottom: 50vh;
+        margin: 10px;
+    }
+
+    .picture{
+    height: 60vh;
+    flex-basis: 45%;
+    margin-bottom: auto; 
+    }
+    .bio{
+        padding: 20px;
+        height: 50vh;
+
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10vh;
+        margin: 20px;
+        
+    }
+    
+    
+    
+
 }

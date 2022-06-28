@@ -25,5 +25,15 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     buttons[0].classList.add("button--selected")
 })
 
+const Btn = document.querySelector(".modal-btn")
+const Bg = document.querySelector(".modal_bg")
+const closer = document.querySelector(".close")
 
 
+
+Btn.addEventListener('click', function(){
+    Bg.classList.add('bg-active')
+})
+closer.addEventListener('click',function(){
+    Bg.classList.remove('bg-active')
+})
