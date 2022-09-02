@@ -11,8 +11,9 @@ body {
 .picbio {
     height: 25vh;
     display: flex;
-    margin: 16vh 0vw 10vh 0vw ;
+   
     border-bottom: 1px solid black;
+    
 
     
 }
@@ -35,7 +36,7 @@ p {
     
     border: 1px solid;
     flex-basis: 60%;
-    background-color:#D2BEF0 ;
+    background-color:#969696 ;
     margin: 5vh;
 
 }
@@ -44,11 +45,14 @@ img{
     height:20vh
 } 
 .heading{
-    color: rgb(189, 189, 189);
-    background-color: rgb(67, 66, 66);
+    color: rgb(255, 255, 255);
+    
     margin: 30px 30px 30px 30px;
     
     
+}
+.titles{
+background-color: gray;
 }
 
 
