@@ -1,6 +1,6 @@
 body {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 60%);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(245, 245, 245) 60%);
     margin: 0;
     padding:0;
     font-family: 'Raleway', sans-serif;
@@ -43,12 +43,11 @@ p {
     background-color:#969696 ;
     margin: 5vh;
 
-}
+} 
 
 .carousel-item {
     height: 30rem;
     background: #777;
-    margin-right: 30px;
 }
 #myCarousel {
     margin: 10px;
@@ -58,4 +57,13 @@ p {
     margin: 2rem;
     font-size: 18px;
 }
-
+.carousel-control-prev {
+    left: -1rem;
+    
+}
+.carousel-control-next {
+    right: -1rem;
+}
+.project-picture{
+    width: 200px;
+}
