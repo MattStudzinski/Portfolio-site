@@ -14,8 +14,6 @@ p{
 .container-for-bio-and-picture {
     max-width: 100%;
     max-height: 100%;
-    display: flex;
-    border-bottom: 1px solid black;
     
     display: grid;
     grid-template-columns: 25% 50% 10% 15%;
@@ -41,7 +39,6 @@ p{
     max-height: 100%;
     object-fit: cover;
     grid-column: 2;
-    border:1px solid white;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -62,6 +59,49 @@ p{
 
 } 
 
+.technologies-container{
+    display: grid;
+    grid-template-columns:6% 88% 6%;
+    grid-template-rows: 60px 70px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo1{
+    margin-right:18rem;
+
+}
+#logo2{
+    margin-right:14.4rem;
+}
+#logo3{
+    margin-right:9.8rem;
+}
+#logo4{
+    margin-right:4.2rem;
+}
+#logo5{
+    margin-left: 1rem;
+    
+}
+#logo6{
+    margin-left:6.7rem;
+}
+#logo7{
+    margin-left:12.3rem;
+}
+#logo8{
+    margin-left:17.5rem;
+}
+.relevant-tech{
+    justify-self: center;
+    align-self: center;
+    grid-column: 2;
+    font-size: 20px;
+}
+
+
 .projectPicture{
     
     max-height: 100%;
@@ -79,23 +119,28 @@ p{
 .project-container{
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 530px 530px 530px;
+    grid-template-rows: 50px 530px 530px 530px;
     
 }
-
-#first{
+.projects{
     grid-column: 2;
     grid-row: 1;
+    align-self: center;
     justify-self: center;
 }
-#second{
+#first{
     grid-column: 2;
     grid-row: 2;
     justify-self: center;
 }
-#third{
+#second{
     grid-column: 2;
     grid-row: 3;
+    justify-self: center;
+}
+#third{
+    grid-column: 2;
+    grid-row: 4;
     justify-self: center;
 }
 .card{
@@ -146,8 +191,6 @@ p{
     display: grid;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    
-    
     
 }
 .live-sitebtn {
@@ -241,6 +284,15 @@ p{
    }
 
    .logo{
-    max-width: 50px;
+    max-width: 42px;
+   }
+   .logos{
+    max-width: 42px;
+    
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
    }
   
