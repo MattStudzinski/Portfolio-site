@@ -27,6 +27,7 @@ p{
     flex-direction: column;
     justify-self: right;
     margin-top: 70px;
+    
 }
 .fa-brands{
     padding-top: 1.5rem;
@@ -185,6 +186,7 @@ p{
     align-self:center ;
     font-size: 15px;
     margin: 0px 5px 12px 16px;
+    
 }
 .button-container{
     background-color: rgb(155, 155, 155);
@@ -310,12 +312,19 @@ p{
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
+    
 
    }
    .education{
-    grid-column: 1 /span 3;
+    grid-column: 1 /span 4;
     grid-row: 1;
     justify-self: center;
+    align-self: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 20px;
+    border-bottom: 2px inset white;
+    font-weight: bold;
    }
    .education-info{
     align-self: center;
@@ -325,4 +334,38 @@ p{
     border: solid 2px white;
     border-radius: 20px;
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
+   }
+   .modal-bg{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+    z-index: 2;
+   }
+   .bg-active{
+    visibility: visible;
+    opacity: 1;
+    
+    
+   }
+   .modal{
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   }
+   .resume{
+    width: 100%;
    }
