@@ -14,7 +14,6 @@ p{
 .container-for-bio-and-picture {
     max-width: 100%;
     max-height: 100%;
-    
     display: grid;
     grid-template-columns: 25% 50% 10% 15%;
     grid-template-rows: 190px 300px;
@@ -62,10 +61,15 @@ p{
 .technologies-container{
     display: grid;
     grid-template-columns:6% 88% 6%;
-    grid-template-rows: 60px 70px;
+    grid-template-rows: 50px 70px;
     margin: 10px;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 8px 19px -3px #0000007d ;
+    border: inset 3px #ffffff;
+    border-radius: 20px;
+    
+
 }
 
 #logo1{
@@ -151,8 +155,7 @@ p{
     grid-template-rows:  42% 2% 7% 34% 6% 9%   ;
     width:317.5px;
     box-shadow: 4px 8px 19px -3px #0000007d ;
-    border-radius: 25px;
-    
+    border-radius: 25px;    
 }
 .project-title{
     grid-column: 1 / span 5 ;
@@ -181,8 +184,7 @@ p{
     grid-row: 5;
     align-self:center ;
     font-size: 15px;
-    margin: 0px 5px 12px 5px;
-    
+    margin: 0px 5px 12px 16px;
 }
 .button-container{
     background-color: rgb(155, 155, 155);
@@ -285,10 +287,13 @@ p{
 
    .logo{
     max-width: 42px;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+
    }
    .logos{
     max-width: 42px;
-    
     align-self: center;
     justify-self: center;
     grid-column: 2;
@@ -296,3 +301,28 @@ p{
     position: relative;
    }
   
+   .education-container{
+    display: grid;
+    grid-template-columns: 5% 10% 80% 5% ;
+    grid-template-rows: 50px 150px 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+
+   }
+   .education{
+    grid-column: 1 /span 3;
+    grid-row: 1;
+    justify-self: center;
+   }
+   .education-info{
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: solid 2px white;
+    border-radius: 20px;
+    box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
+   }
