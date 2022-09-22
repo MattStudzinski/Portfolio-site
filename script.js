@@ -28,13 +28,39 @@ const errorNodes = document.querySelectorAll(".error")
 function validateForm(){
 
     clearMessages()
+    let errorFlag = false
 
     if(nameInput.value.length < 1){
         errorNodes[0].innerText = "Name cannot be blank"
         // nameInput.classList.add("error-border")
+        errorFlag= true
+    }
+    if(!emailIsValid(emailInput.value)){
+        errorNodes[1].innerText = "Invalid email address"
+        // email.classList.add("error-border")
+        errorFlag= true
+    }
+
+    if(messageInput.value.length < 1){
+        errorNodes[2].innerText = "Please enter your message"
+        // message.classList.add("error-border")
+        errorFlag= true
+    }
+    if(!errorFlag){
+        success.innerText= "Success"
     }
 }
 
 function clearMessages(){
-    
+    for(let i = 0; i < errorNodes.length; i++){
+        errorNodes[i].innerText = ""
+    }
+    success.innerText = ""
+    // nameInput.classList.remove("error-border")
+    // emailInput.classList.remove("error-border")
+    // messageInput.classList.remove("error-border")
+}
+function emailIsValid(emailInput){
+    let pattern = /\S+@\S+\.\S+/
+    return pattern.test(emailInput)
 }

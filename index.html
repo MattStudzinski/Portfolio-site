@@ -107,23 +107,25 @@
     </div>
     <div class="modal-bg2">
         <div class="modal2">
-        <form onsubmit="event.preventDefault(); validateForm()">
+        <form 
+        onsubmit=validateForm()
+        action= "https://formsubmit.co/28e6396166ddda26dfaab67df11ab190" method="POST">
             <h2>contact me</h2>
             <label for="Name">Name</label>
-            <input type="text" id="name-input" placeholder="Your name">
+            <input name="name" type="text" id="name-input" placeholder="Your name">
             <small class="error"></small>
 
             <label for="Email">Email</label>
-            <input type="text" id="email-input" placeholder="Your email">
+            <input name="email" type="text" id="email-input" placeholder="Your email">
             <small class="error"></small>
 
             <label for="Name">Message</label>
-            <textarea id="message-input" placeholder="Message" rows="6"></textarea>
+            <textarea name="message" id="message-input" placeholder="Message" rows="6"></textarea>
             <small class="error"></small>
             <span class="modal-close2"><i class="fa-solid fa-x"></i></span>
             <div class="send">
             <input type="submit" value="Send Message">
-            <p id="succsess"></p>
+            <p id="success"></p>
             </div>
             
         </form>
