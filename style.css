@@ -6,6 +6,7 @@ body {
     
     
     
+    
 }
 p{
     color: #ffffff;
@@ -335,7 +336,7 @@ p{
     border-radius: 20px;
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
    }
-   .modal-bg{
+   .modal-bg, .modal-bg2{
     position: fixed;
     width:100%;
     height: 100vh;
@@ -347,16 +348,16 @@ p{
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s opacity 0.5s;
+    transition:visibility 0s, opacity 0.5s;
     z-index: 2;
    }
-   .bg-active{
+   .bg-active, .bg-active2{
     visibility: visible;
     opacity: 1;
     
     
    }
-   .modal{
+   .modal, .modal2{
     background-color: white;
     width: 100%;
     height: 70vh;
@@ -364,8 +365,17 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     
    }
    .resume{
     width: 100%;
+   }
+   .modal-close, .modal-close2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #004f80;
+    cursor: pointer;
+
    }
