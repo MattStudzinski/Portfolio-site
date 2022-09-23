@@ -336,6 +336,71 @@ p{
     border-radius: 20px;
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
    }
+   .contact-container{
+    display: grid;
+    grid-template-columns: 1 1;
+    grid-template-rows: 125px;
+    /* margin: 1.5rem;
+    margin-bottom: 40px; */
+    justify-content: center;
+
+   }
+   .contact-card{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 70px;
+    background-color: rgb(155, 155, 155);
+    border-radius: 10px;    
+   }
+   .contact-title{
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / span 2;
+   }
+   .modal-button, .modal-button2{
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    max-width: 150px;
+    width: 150px;
+   padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: rgb(155, 155, 155);
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+
+.modal-button::before, .modal-button2::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.modal-button:hover, .modal-button2:hover {
+ color: #e8e8e8;
+}
+
+.modal-button:hover::before, .modal-button2:hover::before {
+ width: 100%;
+}
+
    .modal-bg, .modal-bg2{
     position: fixed;
     width:100%;
