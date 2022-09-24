@@ -1,12 +1,8 @@
 body {
     
-    background-color: #656565;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     margin: 0;
     padding:0;
-    
-    
-    
-    
 }
 p{
     color: #ffffff;
@@ -150,7 +146,8 @@ p{
     justify-self: center;
 }
 .card{
-    background-color: rgb(61, 61, 61);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
     margin: 10px;
     display: grid;
     grid-template-columns:  15% 25% 10% 10% 25% 15%;
@@ -190,7 +187,8 @@ p{
     
 }
 .button-container{
-    background-color: rgb(155, 155, 155);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
     grid-column: 1 / span 6 ;
     grid-row: 6;
     display: grid;
@@ -210,7 +208,7 @@ p{
     border-radius: 15px;
     color: #ffffff;
     z-index: 1;
-    background: #004f80;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     position: relative;
     font-size: 16px;
     -webkit-box-shadow: 4px 8px 12px -3px rgba(0,0,0,0.27);
@@ -228,7 +226,8 @@ p{
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #656565;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.27);
@@ -255,7 +254,7 @@ p{
     border-radius: 15px;
     color: #ffffff;
     z-index: 1;
-    background:#004f80;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
     position: relative;
     font-size: 16px;
     -webkit-box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.27);
@@ -273,7 +272,8 @@ p{
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #656565;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.27);
@@ -338,19 +338,22 @@ p{
    }
    .contact-container{
     display: grid;
-    grid-template-columns: 1 1;
+    grid-template-columns:7% 86% 7% ;
     grid-template-rows: 125px;
-    /* margin: 1.5rem;
-    margin-bottom: 40px; */
+    margin-bottom: 40px;
     justify-content: center;
+    
 
    }
    .contact-card{
     display: grid;
+    grid-column: 2;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 70px;
-    background-color: rgb(155, 155, 155);
-    border-radius: 10px;    
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+    border-radius: 10px;
+    box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
    }
    .contact-title{
     justify-self: center;
@@ -366,9 +369,9 @@ p{
    padding: 15px 25px;
  border: unset;
  border-radius: 15px;
- color: #212121;
+ color: #ffffff;
  z-index: 1;
- background: rgb(155, 155, 155);
+ background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
  position: relative;
  font-weight: 1000;
  font-size: 17px;
@@ -386,7 +389,7 @@ p{
  height: 100%;
  width: 0;
  border-radius: 15px;
- background-color: #212121;
+ background-color: #656565;
  z-index: -1;
  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
