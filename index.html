@@ -114,23 +114,18 @@
         <form class="contact-form"
         onsubmit=validateForm()
         action= "https://formsubmit.co/mattstudzinski@gmail.com" method="POST">
-            <p class="contact-title">contact me</p>
-            <label for="Name">Name</label>
+            <p class="contact-me">Contact me</p>
+            
             <input name="name" type="text" id="name-input" placeholder="Your name">
-            <small class="error"></small>
-
-            <label for="Email">Email</label>
+            
             <input name="email" type="text" id="email-input" placeholder="Your email">
-            <small class="error"></small>
 
-            <label for="Name">Message</label>
             <textarea name="message" id="message-input" placeholder="Message" rows="6"></textarea>
-            <small class="error"></small>
+
             <span class="modal-close2"><i class="fa-solid fa-x"></i></span>
-            <div class="send">
-            <input type="submit" value="Send Message">
-            <p id="success"></p>
-            </div>
+            
+            <input id="send" type="submit" value="Send Message">
+            
             
         </form>
         </div>
