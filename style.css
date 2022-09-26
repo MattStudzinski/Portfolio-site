@@ -361,6 +361,7 @@ p{
     grid-column: 2;
     justify-self: center;
     
+    
    }
    .modal-button, .modal-button2{
     grid-row: 2;
@@ -440,12 +441,23 @@ p{
    .resume{
     width: 100%;
    }
-   .modal-close, .modal-close2{
+   .modal-close{
     position: absolute;
     top: 10px;
     right: 10px;
     color: #004f80;
     cursor: pointer;
+
+   }
+   .modal-close2{
+    color: #004f80;
+    cursor: pointer;
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+    border: solid;
+    border-radius: 5px;
 
    }
    #success{
@@ -467,11 +479,14 @@ p{
    .contact-form{
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 7% 10% 17% 17% 34% 10% 5%;
+    grid-template-rows: 7% 10% 15% 15% 34% 14% 5%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
     border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    justify-self: center;
+    
    }
    
    #name-input{
@@ -479,28 +494,34 @@ p{
     grid-column: 2 /span 1;
     background: transparent;
     max-width: 600px;
+    width: 90%;
     height: 40px;
-    align-self: center;
     border: solid black;
     border-radius: 20px;
     padding-left: 10px;
+    justify-self: center;
+    align-self: center;
+    
     
    }
    #email-input{
     grid-row: 4;
     grid-column: 2 /span 1;
     background: transparent;
-    max-width: 600px;
+    width: 90%;
     height: 40px;
     align-self: center;
     border: solid black;
     border-radius: 20px;
     padding-left: 10px;
+    align-self: center;
+    justify-self: center;
+    
    }
-   input{
+   input, textarea{
     background: transparent;
     outline: none;
-    
+    resize: none;
 }
 
 
@@ -508,32 +529,42 @@ p{
     grid-row: 5;
     grid-column: 2 /span 1;
     background: transparent;
-    max-width: 600px;
-    height: 105px;
+    width: 90%;
+    height: 80%;
     align-self: center;
+    justify-self: center;
     border: solid black;
     border-radius: 20px;
-    padding: 10px;
-    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+    
+    
+    
 }
-#send{
-    grid-row: 6;
-    grid-column: 2;
 
-
-}
 /* From uiverse.io */
 #send {
+    grid-row: 6;
+    grid-column: 2;
     display: inline-block;
+    width: 80%;
+    max-width: 400px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15px;
     padding: 12px 24px;
     border: 1px solid #4f4f4f;
-    border-radius: 4px;
+    border-radius: 20px;
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
     font-size: 19px;
     color: black;
     z-index: 1;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.67);
    }
    
    #send:before {
@@ -559,7 +590,7 @@ p{
     top: 180%;
     width: 160%;
     height: 190%;
-    background-color: #39bda7;
+    background-color: #ffffff;
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -568,8 +599,8 @@ p{
    
    #send:hover {
     color: #ffffff;
-    border: 1px solid #39bda7;
+    border: 1px solid #ffffff;
    }
-   
-  
-   
+   ::placeholder{
+    color: rgb(0, 0, 0);
+   }
