@@ -461,7 +461,7 @@ p{
    .bg-active, .bg-active2{
     visibility: visible;
     opacity: 1;
-    
+    width: 100vw;
     
    }
    .modal{
@@ -469,7 +469,7 @@ p{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 85vh;
-    
+    width: 100%;
     
     
     
@@ -496,7 +496,7 @@ p{
     border: solid;
     border-radius: 5px;
     justify-self: flex-start;
-    margin:6px 0px 0px 94%;
+    margin:6px 0px 0px 93%;
     
     
 
