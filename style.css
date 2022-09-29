@@ -74,7 +74,6 @@ p{
     grid-column: 2;
     object-fit: cover;
     justify-self: center;
-    
     margin: 5vh;
 
 } 
@@ -496,20 +495,19 @@ p{
     grid-row: 1;
    }
    .modal-close{
-    width:13px;
-    height: 16px;
+    
     grid-column:2 ;
     grid-row: 1;
+    height: 17px;
     color: #004f80;
     cursor: pointer;
     border: solid;
     border-radius: 5px;
     justify-self: flex-start;
-    margin:6px 0px 0px 93%;
-    
-    
-
+    margin:6px 0px 0px 92%;
    }
+   
+   
    .modal-close2{
     color: #004f80;
     cursor: pointer;
@@ -518,6 +516,7 @@ p{
     justify-self: end;
     align-self: flex-end;
     margin-right: 5px;
+    margin-bottom: 5px;
     border: solid;
     border-radius: 5px;
 
@@ -666,7 +665,7 @@ p{
    ::placeholder{
     color: rgb(0, 0, 0);
    }
-
+   
    @media screen and (min-width:400px) {
     #logo1{
         
@@ -707,10 +706,21 @@ p{
         max-width: 80%;
         max-height: 95%;
     }
+    .modal-close, .modal-close2{
+        margin-left:93%;
+    }
+   }
+   @media screen and (min-width:600px) {
+    .modal-close, .modal-close2{
+        margin-left:94%;
+    }
    }
    @media screen and (min-width:700px) {
     .modal{
         width: 85%;
+    }
+    .modal-close, .modal-close2{
+        margin-left:95%;
     }
    }
 
@@ -767,6 +777,9 @@ p{
     }
     .modal{
         max-width: 750px;
+    }
+    .modal-close, .modal-close2{
+        margin-left:96%;
     }
    }
 
