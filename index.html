@@ -9,7 +9,11 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Raleway&family=Roboto+Mono&display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="style.css">
@@ -19,7 +23,7 @@
 </head>
 <body>
     <div class="contained">
-    <section class = "container-for-bio-and-picture">
+    <section class = "container-for-picture">
     
     <img id="me" src="images/Matthew.jpeg" alt="picture of matthew">
     <div class="socialLinks">
@@ -36,9 +40,9 @@
 </div>
     </section>
     </div>
+    <p class="relevant-tech">Relevant Technologies</p>
     <div class="tech-section">
     <section class="technologies-container">
-    <p class="relevant-tech">relevant technologies</p>
         <img id="logo1"class="logos" src="images/HTML.png">
         <img id="logo2"class="logos" src="images/css.png">
         <img id="logo3"class="logos" src="images/javascript-logo.png">
@@ -53,40 +57,40 @@
 
 <div class="project-section">
 <section class="project-container">
-    <p class="projects">Projects</p>
+    <p class="projects">Featured Projects</p>
     <div id="first" class="card">
         <img class="projectPicture" src="images/retrodash.png" alt="Retro dash">
         <p class="project-title">Retro Dash</p>
-        <p class="project-description">Developing a 3D runner game powered with Three.js with models built in blender. The goal of the game is to avoid the obstacles for as long as possible, the player will have a running distance counter on the top of their screen. the player model can move side to side to avoid incoming objects. </p>
+        <p class="project-description">Created a 3D runner game powered with Three.js with models built in blender. The goal of the game is to avoid the obstacles for as long as possible, the player will have a running distance counter on the top of their screen. the player model can move side to side to avoid incoming objects. </p>
         <p class="languages">Languages used: Three.js, CSS, HTML, Blender</p>
         <div class="button-container">
-        <button class="live-sitebtn" onclick="location.href='#'" type="button">
+        <button class="live-sitebtn" onclick="location.href='https://retrodash.netlify.app/'" type="button">
             live website</button>
-        <button class="source-codebtn" onclick="location.href='#'" type="button">
+        <button class="source-codebtn" onclick="location.href='https://github.com/runner-runner224/running-square'" type="button">
             source code</button>
         </div>
     </div>
     <div id="second" class="card">
         <img class="projectPicture" src="images/recipesearch.png" alt="Recipe generator">
         <p class="project-title">Recipe Generator</p>
-        <p class="project-description">this is where the description will go</p>
+        <p class="project-description">Application with the goal of making deciding what to cook for dinner easier. Users can enter in any number of ingridients into the search bar, only recipes that include those ingridients will show in the results page. all recipe cards have full lists of ingridients, nutritional facts, and a link to view the full recipe along with instructions. </p>
         <p class="languages">Languages used: HTML, ReactJS, CSS</p>
         <div class="button-container">
-        <button class="live-sitebtn" onclick="location.href='#'" type="button">
+        <button class="live-sitebtn" onclick="location.href='https://recipegenerator221.netlify.app/home'" type="button">
             live website</button>
-        <button class="source-codebtn" onclick="location.href='#'" type="button">
+        <button class="source-codebtn" onclick="location.href='https://github.com/MattStudzinski/recipe-search'" type="button">
             source code</button>
         </div>
     </div>
     <div id="third" class="card">
         <img class="projectPicture" src="images/jupiterdeals.png" alt="Jupiter deals">
         <p class="project-title">Jupiter Deals</p>
-        <p class="project-description">this is where the description will go </p>
+        <p class="project-description">Affliate marketing app designed to display and promote a list of product deals to the audience. The audience may view the products, see a brief description, a link to the product, the price, an image of the product, and the name of the product. The admin of the site has a separate login to edit, post, and delete products. </p>
         <p class="languages">Languages used: ReactJS, HTML, CSS</p>
         <div class="button-container">
-        <button class="live-sitebtn" onclick="location.href='#'" type="button">
+        <button class="live-sitebtn" onclick="location.href='https://jupiterdeals.netlify.app/'" type="button">
             live website</button>
-        <button class="source-codebtn" onclick="location.href='#'" type="button">
+        <button class="source-codebtn" onclick="location.href='https://github.com/Jupiter115/crispy-guide'" type="button">
             source code</button>
         </div>
     </div>
@@ -108,9 +112,11 @@
 <section>
 <section class="contact-container">
     <div class="contact-card">
-    <p class="contact-title">Get in touch with me</p>
+    <a id="github" href ="https://github.com/MattStudzinski"><i class="fa-brands fa-github"></i></a>
+    <p class="contact-title">Lets get in touch!</p>
+    <a id="linkedin"class="linkedin" href ="https://www.linkedin.com/in/mattstudzinski"><i class="fa-brands fa-linkedin-in "></i></a>
     <button class="modal-button">Resume</button>
-    <button class="modal-button2">Contact info</button>
+    <button id="button2" class="modal-button2">Contact info</button>
     </div>
 </section>
     <div class="modal-bg">
