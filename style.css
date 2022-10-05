@@ -55,13 +55,14 @@ p{
     display: flex;
     flex-direction: column;
     margin-bottom: 55px;
-
-    
-    
+    transition: all .2s ease-in-out;
 }
+.fa-brands:hover { transform: scale(1.2); }
+
 .fa-brands{
     padding-top: 1.5rem;
-    color: #004f80;
+    color: #003d63;
+    transition: all .2s ease-in-out;
 }
 
 #me {
@@ -252,7 +253,7 @@ p{
     font-family: var(--font-body);
 }
 .button-container{
-    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
     grid-column: 1 / span 6 ;
     grid-row: 6;
     display: grid;
@@ -417,7 +418,7 @@ p{
     width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50px 75px;
-    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
     border-radius: 10px;
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
    }
@@ -544,10 +545,12 @@ p{
     display: grid;
     grid-template-columns: 3% 94% 3%;
     grid-template-rows: 100%;
+    margin-top: 20px;
     
    }
    .resume{
     width: 100%;
+    height: 99%;
     grid-column: 2;
     grid-row: 1;
    }
