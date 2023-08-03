@@ -5,7 +5,7 @@
 
 body {
     
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-color: rgb(137, 137, 137);
     margin: 0;
     padding:0;
     
@@ -253,7 +253,7 @@ p{
     font-family: var(--font-body);
 }
 .button-container{
-    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    background-image: linear-gradient(-225deg, #788ac2 0%, #817fc3 48%, #6771af 100%);
     grid-column: 1 / span 6 ;
     grid-row: 6;
     display: grid;
@@ -418,7 +418,7 @@ p{
     width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50px 75px;
-    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    background-image: linear-gradient(-225deg, #788ac2 0%, #817fc3 48%, #6771af 100%);
     border-radius: 10px;
     box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.77);
    }
